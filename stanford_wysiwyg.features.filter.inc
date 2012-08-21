@@ -16,23 +16,15 @@ function stanford_wysiwyg_filter_default_formats() {
     'name' => 'Content Editor Text Format',
     'cache' => '1',
     'status' => '1',
-    'weight' => '0',
+    'weight' => '-10',
     'filters' => array(
-      'pathologic' => array(
-        'weight' => '-50',
-        'status' => '1',
-        'settings' => array(
-          'local_paths' => '',
-          'absolute' => 1,
-        ),
-      ),
       'filter_htmlcorrector' => array(
-        'weight' => '-45',
+        'weight' => '-50',
         'status' => '1',
         'settings' => array(),
       ),
       'wysiwyg' => array(
-        'weight' => '-44',
+        'weight' => '-49',
         'status' => '1',
         'settings' => array(
           'valid_elements' => '@[id],
@@ -200,11 +192,19 @@ a,br,cite,code,em,h2,h3,h4,h5,h6,li,ol,p,span,strong,tbody,thead,th,tr,td',
             64 => 'well',
           ),
           'rule_valid_ids' => array(
-            0 => 'fddo-*',
+            0 => 'prefix-*',
           ),
           'rule_style_urls' => array(
             0 => '/*',
           ),
+        ),
+      ),
+      'pathologic' => array(
+        'weight' => '-48',
+        'status' => '1',
+        'settings' => array(
+          'local_paths' => '',
+          'absolute' => 1,
         ),
       ),
     ),

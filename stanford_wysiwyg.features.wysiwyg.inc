@@ -38,6 +38,7 @@ function stanford_wysiwyg_wysiwyg_default_profiles() {
           'Copy' => 1,
           'PasteFromWord' => 1,
           'RemoveFormat' => 1,
+          'Format' => 1,
           'Table' => 1,
           'SpellChecker' => 1,
         ),
@@ -59,6 +60,7 @@ function stanford_wysiwyg_wysiwyg_default_profiles() {
 Gray Header=table.gray-header
 Red Header=table.red-header',
     ),
+    'metatags' => array(),
     'rdf_mapping' => array(),
   );
 
