@@ -34,6 +34,7 @@ function stanford_wysiwyg_user_default_permissions() {
     'name' => 'show format selection for taxonomy_term',
     'roles' => array(
       0 => 'administrator',
+      1 => 'editor',
     ),
     'module' => 'better_formats',
   );
@@ -43,6 +44,7 @@ function stanford_wysiwyg_user_default_permissions() {
     'name' => 'show format selection for user',
     'roles' => array(
       0 => 'administrator',
+      1 => 'editor',
     ),
     'module' => 'better_formats',
   );
