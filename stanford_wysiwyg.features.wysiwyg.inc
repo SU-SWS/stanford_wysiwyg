@@ -60,45 +60,83 @@ function stanford_wysiwyg_wysiwyg_default_profiles() {
       'paste_auto_cleanup_on_paste' => 1,
       'block_formats' => 'p,h2,h3,h4,h5,h6,pre',
       'css_setting' => 'self',
-      'css_path' => '%bsites/default/themes/open_framework/css/open_framework.css , %bsites/default/themes/stanford_framework/css/stanford_framework.css , %bsites/default/themes/stanford_jordan/css/stanford_jordan.css',
+      'css_path' => '%bsites/default/themes/open_framework/css/open_framework.css , %bsites/default/themes/stanford_framework/css/stanford_framework.css',
       'css_classes' => 'Abbreviation for All-Caps=abbr.initialism
+
 Button Link=a.button
+
 Edit Link=a.edit-link
+
 More Link=a.more-link
+
 White Icon=i.icon-white
+
 Callout=p.callout
+
 Caption=p.caption
+
 Error Text=p.text-error
+
 Informational Text=p.text-info
+
 Lead=p.lead
+
 Muted Text=p.muted
+
 Pullquote Credits=p.credits
+
 Pullquote Large=p.pullquote-large
+
 Pullquote Small=p.pullquote
+
 Success Text=p.text-success
+
 Summary Text=p.summary
+
 Warning Text=p.text-warning
+
 Bracket=blockquote.bracket
+
 Callout=blockquote.callout
+
 Pull Right Blockquote=blockquote.pull-right
+
 Topline=blockquote.topline
+
 Jump To Links=ul.jump-to
+
 Unstyled Ordered List=ol.unstyled
+
 Unstyled Unordered List=ul.unstyled
+
 Horizontal List=dl.dl-horizontal
+
 Scrollable Code=pre.pre-scrollable
+
 Table=table.table
+
 Table Striped=table.table-striped
+
 Table Bordered=table.table-bordered
+
 Table Condensed=table.table-condensed
+
 Table Hover=table.table-hover
+
 Table Row Success=tr.success
+
 Table Row Error=tr.error
+
 Table Row Warning=tr.warning
+
 Table Row Information=tr.info
+
 Banner Overlay=div.banner-overlay
+
 Footer Well=div.footer-well
+
 Sub Block=div.sub-block
+
 Well=div.well',
     ),
     'metatags' => array(),
