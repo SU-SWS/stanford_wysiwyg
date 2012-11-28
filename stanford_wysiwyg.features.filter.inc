@@ -53,7 +53,7 @@ abbr[class],
 
 i[class],
 
-br,cite,code,em,h2,h3,h4,h5,h6,li,strong,sup,sub,tbody,thead,th,tr,td',
+br,cite,code,em,h2,h3,h4,h5,h6,hr,li,strong,sup,sub,tbody,thead,th,tr,td',
           'allow_comments' => '0',
           'nofollow_policy' => 'whitelist',
           'nofollow_domains' => array(
