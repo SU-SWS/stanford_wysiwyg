@@ -1,6 +1,12 @@
 Stanford WYSIWYG x.x-x.x xxxx-xx-xx
 -----------------------------------
 
+Stanford WYSIWYG 7.x-1.0-alpha5 2012-11-28
+------------------------------------------
+-bug fixes
+-added several classes
+-removed some HTML elements
+
 Stanford WYSIWYG 7.x-1.0-alpha4 2012-10-24
 ------------------------------------------
 -added open_framework classes to WYSIWYG dropdown
