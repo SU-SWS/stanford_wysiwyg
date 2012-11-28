@@ -252,6 +252,11 @@ br,cite,code,em,h2,h3,h4,h5,h6,hr,li,strong,sup,sub,tbody,thead,th,tr,td',
             152 => 'muted',
             154 => 'pull-right',
             156 => 'pre-scrollable',
+            158 => 'alert',
+            160 => 'alert-error',
+            162 => 'alert-success',
+            164 => 'alert-info',
+            
           ),
           'rule_valid_ids' => array(
             0 => 'prefix-*',

@@ -109,8 +109,6 @@ Unstyled Ordered List=ol.unstyled
 
 Unstyled Unordered List=ul.unstyled
 
-Horizontal List=dl.dl-horizontal
-
 Scrollable Code=pre.pre-scrollable
 
 Table=table.table
@@ -131,11 +129,13 @@ Table Row Warning=tr.warning
 
 Table Row Information=tr.info
 
-Banner Overlay=div.banner-overlay
+Alert=div.alert
 
-Footer Well=div.footer-well
+Error Alert=div.alert-error
 
-Sub Block=div.sub-block
+Success Alert=div.alert-success
+
+Informational Alert=div.alert-info
 
 Well=div.well',
     ),
