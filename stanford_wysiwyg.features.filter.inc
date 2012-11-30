@@ -28,31 +28,18 @@ function stanford_wysiwyg_filter_default_formats() {
         'status' => '1',
         'settings' => array(
           'valid_elements' => '@[id],
-
 a[!href|title|class],
-
 div[class],
-
 p[class],
-
 table[class],
-
 ul[class],
-
 ol[class],
-
 img[alt|src|title|style|class],
-
 blockquote[class],
-
 pre[class],
-
 span[class],
-
 abbr[class],
-
 i[class],
-
 br,cite,code,em,h2,h3,h4,h5,h6,hr,li,strong,sup,sub,tbody,thead,th,tr,td',
           'allow_comments' => '1',
           'nofollow_policy' => 'whitelist',
