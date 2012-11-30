@@ -47,6 +47,9 @@ function stanford_wysiwyg_wysiwyg_default_profiles() {
           'CreateDiv' => 1,
           'SpellChecker' => 1,
         ),
+        'drupal' => array(
+          'break' => 1,
+        ),
       ),
       'toolbar_loc' => 'top',
       'toolbar_align' => 'left',
