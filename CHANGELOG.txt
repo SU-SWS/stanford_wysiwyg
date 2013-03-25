@@ -1,6 +1,10 @@
 Stanford WYSIWYG x.x-x.x xxxx-xx-xx
 -----------------------------------
 
+Stanford WYSIWYG 7.x-1.0-alpha7 2013-03-25
+------------------------------------------
+-Detect default theme and add theme-specific CSS if it is a Stanford theme
+
 Stanford WYSIWYG 7.x-1.0-alpha5 2012-11-28
 ------------------------------------------
 -bug fixes
