@@ -243,6 +243,7 @@ br,cite,code,em,h2,h3,h4,h5,h6,hr,li,strong,sup,sub,tbody,thead,th,tr,td',
             160 => 'alert-error',
             162 => 'alert-success',
             164 => 'alert-info',
+            166 => 'clear-both',
             
           ),
           'rule_valid_ids' => array(
