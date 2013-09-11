@@ -27,7 +27,7 @@ function stanford_wysiwyg_filter_default_formats() {
         'weight' => '-49',
         'status' => '1',
         'settings' => array(
-          'valid_elements' => '@[id],
+          'valid_elements' => '@[id|class],
 a[!href|title|class],
 div[class],
 p[class],
