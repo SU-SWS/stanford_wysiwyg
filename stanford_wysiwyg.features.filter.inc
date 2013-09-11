@@ -259,6 +259,7 @@ br,cite,code,em,h2,h3,h4,h5,h6,hr,li,strong,sup,sub,tbody,thead,th,tr,td',
         'settings' => array(
           'local_paths' => '',
           'absolute' => 1,
+          'protocol_style' => 'full',
         ),
       ),
     ),
