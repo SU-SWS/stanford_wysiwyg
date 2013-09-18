@@ -234,6 +234,7 @@ div,p,table,ul,ol,blockquote,pre,span,abbr,i,br,cite,code,em,h2,h3,h4,h5,h6,hr,l
             162 => 'alert-success',
             164 => 'alert-info',
             166 => 'clear-both',
+            168 => 'clearfix',
             
           ),
           'rule_valid_ids' => array(
