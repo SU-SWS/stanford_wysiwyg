@@ -1,6 +1,14 @@
 Stanford WYSIWYG x.x-x.x xxxx-xx-xx
 -----------------------------------
 
+Stanford WYSIWYG 7.x-1.0-alpha8 2013-09-19
+------------------------------------------
+-Fixes issue with theme CSS not appearing in WYSIWYG field
+-Adds "class" as a globally-permitted attribute for all elements
+-Removes "style" as an allowed attribute for img elements
+-Adds "clear-both" and "clearfix" as allowed classes
+-Add support for pathologic protocol-relative URLs
+
 Stanford WYSIWYG 7.x-1.0-alpha7 2013-03-25
 ------------------------------------------
 -Detect default theme and add theme-specific CSS if it is a Stanford theme
