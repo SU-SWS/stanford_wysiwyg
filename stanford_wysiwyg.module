@@ -15,7 +15,7 @@ function stanford_wysiwyg_form_wysiwyg_profile_form_alter(&$form, &$form_state, 
  * Implements hook_wysiwyg_editor_settings_alter().
  */
 
-function stanford_wysiwyg_editor_settings_alter(&$settings, $context) {
+function stanford_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context) {
   // add editor CSS to fix overflow issue
   $editor_css = url(drupal_get_path('module', 'stanford_wysiwyg') . '/css/editor.css');
   $settings['contentsCss'][] = $editor_css;
