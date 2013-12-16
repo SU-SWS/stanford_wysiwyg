@@ -25,7 +25,6 @@ function stanford_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context) {
     case 'open_framework' :
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/bootstrap/css/bootstrap.css');
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/css/open_framework.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_framework') . '/css/stanford_framework.css');
       break;
     case 'stanford_basic' :
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_basic') . '/css/stanford_basic.css');
