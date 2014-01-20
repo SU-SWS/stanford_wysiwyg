@@ -14,24 +14,24 @@ function stanford_wysiwyg_filter_default_formats() {
   $formats['content_editor_text_format'] = array(
     'format' => 'content_editor_text_format',
     'name' => 'Content Editor Text Format',
-    'cache' => '1',
-    'status' => '1',
-    'weight' => '-10',
+    'cache' => 1,
+    'status' => 1,
+    'weight' => -10,
     'filters' => array(
       'filter_htmlcorrector' => array(
-        'weight' => '-50',
-        'status' => '1',
+        'weight' => -50,
+        'status' => 1,
         'settings' => array(),
       ),
       'wysiwyg' => array(
-        'weight' => '-49',
-        'status' => '1',
+        'weight' => -49,
+        'status' => 1,
         'settings' => array(
           'valid_elements' => '@[id|class],
 a[!href|title],
 img[alt|src|title],
 div,p,table,ul,ol,blockquote,pre,span,abbr,i,br,cite,code,em,h2,h3,h4,h5,h6,hr,li,strong,sup,sub,tbody,thead,th,tr,td',
-          'allow_comments' => '1',
+          'allow_comments' => 1,
           'nofollow_policy' => 'whitelist',
           'nofollow_domains' => array(
             0 => 'stanford.edu',
@@ -235,7 +235,6 @@ div,p,table,ul,ol,blockquote,pre,span,abbr,i,br,cite,code,em,h2,h3,h4,h5,h6,hr,l
             164 => 'alert-info',
             166 => 'clear-both',
             168 => 'clearfix',
-            
           ),
           'rule_valid_ids' => array(
             0 => 'prefix-*',
@@ -246,12 +245,12 @@ div,p,table,ul,ol,blockquote,pre,span,abbr,i,br,cite,code,em,h2,h3,h4,h5,h6,hr,l
         ),
       ),
       'pathologic' => array(
-        'weight' => '-48',
-        'status' => '1',
+        'weight' => -48,
+        'status' => 1,
         'settings' => array(
           'local_paths' => '',
-          'absolute' => 1,
           'protocol_style' => 'full',
+          'absolute' => 1,
         ),
       ),
     ),
