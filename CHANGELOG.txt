@@ -1,6 +1,11 @@
 Stanford WYSIWYG x.x-x.x xxxx-xx-xx
 -----------------------------------
 
+Stanford WYSIWYG 7.x-1.0-beta1 2014-04-17
+-----------------------------------------
+-Fixes bug where Stanford Framework CSS was appearing in WYSIWYG when Open Framework
+  was the active theme
+
 Stanford WYSIWYG 7.x-1.0-alpha8 2013-09-19
 ------------------------------------------
 -Fixes issue with theme CSS not appearing in WYSIWYG field
