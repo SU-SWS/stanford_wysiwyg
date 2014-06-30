@@ -28,7 +28,7 @@ function stanford_wysiwyg_filter_default_formats() {
         'status' => 1,
         'settings' => array(
           'valid_elements' => '@[id|class],
-a[!href|title],
+a[href|title|name|target],
 img[alt|src|title],
 div,p,table,ul,ol,blockquote,pre,span,abbr,i,br,cite,code,em,h2,h3,h4,h5,h6,hr,li,strong,sup,sub,tbody,thead,th,tr,td',
           'allow_comments' => 1,
