@@ -11,6 +11,7 @@ dependencies[] = wysiwyg (>=2.2)
 dependencies[] = wysiwyg_filter
 features[features_api][] = api:2
 features[filter][] = content_editor_text_format
+features[wysiwyg][] = content_editor_text_format
 features[user_permission][] = administer filters
 features[user_permission][] = show format selection for node
 features[user_permission][] = show format selection for taxonomy_term
