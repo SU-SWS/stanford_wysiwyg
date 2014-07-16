@@ -1,6 +1,10 @@
 Stanford WYSIWYG x.x-x.x xxxx-xx-xx
 -----------------------------------
 
+Stanford WYSIWYG 7.x-2.1 2014-07-16
+-----------------------------------
+- Fixed a bug where the WYSIWYG profile was not assigned to the Content Editor Text Format
+
 Stanford WYSIWYG 7.x-2.0-alpha1 2014-03-11
 ------------------------------------------
 - Features 2.x Compatible version
