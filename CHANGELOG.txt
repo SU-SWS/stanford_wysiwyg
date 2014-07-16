@@ -1,6 +1,10 @@
 Stanford WYSIWYG x.x-x.x xxxx-xx-xx
 -----------------------------------
 
+Stanford WYSIWYG 7.x-2.2 2014-07-16
+-----------------------------------
+- Removed "name" and "target" attributes as allowed in <a> elements
+
 Stanford WYSIWYG 7.x-2.1 2014-07-16
 -----------------------------------
 - Fixed a bug where the WYSIWYG profile was not assigned to the Content Editor Text Format
