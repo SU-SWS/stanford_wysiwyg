@@ -23,34 +23,39 @@ function stanford_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context) {
   $theme_default = variable_get('theme_default');
   switch ($theme_default) {
     case 'open_framework' :
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/bootstrap/css/bootstrap.css');
+      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap.css');
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/css/open_framework.css');
       break;
     case 'stanford_basic' :
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_basic') . '/css/stanford_basic.css');
       break;
     case 'stanford_framework' :
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/bootstrap/css/bootstrap.css');
+      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap.css');
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/css/open_framework.css');
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_framework') . '/css/stanford_framework.css');
       break;
     case 'stanford_branner' :
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/bootstrap/css/bootstrap.css');
+      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap.css');
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/css/open_framework.css');
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_framework') . '/css/stanford_framework.css');
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_branner') . '/css/stanford_branner.css');
       break;
     case 'stanford_jordan' :
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/bootstrap/css/bootstrap.css');
+      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap.css');
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/css/open_framework.css');
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_framework') . '/css/stanford_framework.css');
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_jordan') . '/css/stanford_jordan.css');
       break;
     case 'stanford_wilbur' :
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/bootstrap/css/bootstrap.css');
+      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap.css');
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/css/open_framework.css');
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_framework') . '/css/stanford_framework.css');
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_wilbur') . '/css/stanford_wilbur.css');
+      break;
+    case 'stanford_light' :
+      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap.css');
+      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/css/open_framework.css');
+      $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_light') . '/css/stanford-light.css');
       break;
     case 'stanfordmodern' :
       $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanfordmodern') . '/css/stanfordmodern.css');
