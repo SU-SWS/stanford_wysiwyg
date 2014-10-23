@@ -1,7 +1,7 @@
 #[Stanford WYSIWYG](https://github.com/SU-SWS/stanford_wysiwyg)
-##### Version: 7.x-2.2
+##### Version: 7.x-2.3
 
-Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.com/sherakama)   
+Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.com/sherakama)
 [Changelog.txt](CHANGELOG.txt)
 
 This module provides an out-of-the-box base WYSIWYG configuration for Stanford Sites. It adds a "Content Editor Text Format" with additional allowed tags and an associated WYSIWYG configuration. Access to the Content Editor Text Format should only be given to trusted roles.
