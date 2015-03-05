@@ -16,49 +16,37 @@ function stanford_wysiwyg_form_wysiwyg_profile_form_alter(&$form, &$form_state, 
  */
 
 function stanford_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context) {
-  // add editor CSS to fix overflow issue
-  $editor_css = url(drupal_get_path('module', 'stanford_wysiwyg') . '/css/editor.css');
+  // Add editor CSS to fix overflow issue.
+  $editor_css = file_create_url(drupal_get_path('module', 'stanford_jumpstart_wysiwyg') . '/css/editor.css');
   $settings['contentsCss'][] = $editor_css;
-  // find default theme; add CSS for stanford themes
+  // Find default theme.
   $theme_default = variable_get('theme_default');
-  switch ($theme_default) {
-    case 'open_framework' :
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/css/open_framework.css');
-      break;
-    case 'stanford_basic' :
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_basic') . '/css/stanford_basic.css');
-      break;
-    case 'stanford_framework' :
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/css/open_framework.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_framework') . '/css/stanford_framework.css');
-      break;
-    case 'stanford_branner' :
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/css/open_framework.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_framework') . '/css/stanford_framework.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_branner') . '/css/stanford_branner.css');
-      break;
-    case 'stanford_jordan' :
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/css/open_framework.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_framework') . '/css/stanford_framework.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_jordan') . '/css/stanford_jordan.css');
-      break;
-    case 'stanford_wilbur' :
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/css/open_framework.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_framework') . '/css/stanford_framework.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_wilbur') . '/css/stanford_wilbur.css');
-      break;
-    case 'stanford_light' :
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'open_framework') . '/css/open_framework.css');
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanford_light') . '/css/stanford-light.css');
-      break;
-    case 'stanfordmodern' :
-      $settings['contentsCss'][] = url(drupal_get_path('theme', 'stanfordmodern') . '/css/stanfordmodern.css');
-      break;
+  // Add CSS for Stanford themes.
+  stanford_wysiwyg_compute_css($theme_default, $settings);
+}
+
+function stanford_wysiwyg_compute_css($theme, &$settings) {
+  // Find ALL THE THEMES.
+  $themes = list_themes();
+  // This setting requires built-in theme support, for variable CSS.
+  $css = variable_get($theme . '_wysiwyg_css');
+  // If it's a theme with variable CSS, like stanford_framework or stanford_light, use the CSS From the variable.
+  if (isset($css)) {
+    foreach ($css as $css_file) {
+      $settings['contentsCss'][] = file_create_url($css_file);
+    }
+  }
+  // If not, load the CSS from the .info file(s) of the theme and its base theme(s)
+  else {
+    // Get the CSS from the base theme(s).
+    $base_themes = array_keys($themes[$theme]->base_themes);
+    foreach ($base_themes as $base_theme) {
+      foreach ($themes[$base_theme]->stylesheets['all'] as $css_file) {
+        $settings['contentsCss'][] = file_create_url($css_file);
+      }
+    }
+    foreach ($themes[$theme]->stylesheets['all'] as $css_file) {
+      $settings['contentsCss'][] = file_create_url($css_file);
+    }
   }
 }
