@@ -17,7 +17,7 @@ function stanford_wysiwyg_form_wysiwyg_profile_form_alter(&$form, &$form_state, 
 
 function stanford_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context) {
   // Add editor CSS to fix overflow issue.
-  $editor_css = url(drupal_get_path('module', 'stanford_jumpstart_wysiwyg') . '/css/editor.css');
+  $editor_css = file_create_url(drupal_get_path('module', 'stanford_jumpstart_wysiwyg') . '/css/editor.css');
   $settings['contentsCss'][] = $editor_css;
   // Find default theme.
   $theme_default = variable_get('theme_default');
@@ -33,7 +33,7 @@ function stanford_wysiwyg_compute_css($theme, &$settings) {
   // If it's a theme with variable CSS, like stanford_framework or stanford_light, use the CSS From the variable.
   if (isset($css)) {
     foreach ($css as $css_file) {
-      $settings['contentsCss'][] = url($css_file);
+      $settings['contentsCss'][] = file_create_url($css_file);
     }
   }
   // If not, load the CSS from the .info file(s) of the theme and its base theme(s)
@@ -42,11 +42,11 @@ function stanford_wysiwyg_compute_css($theme, &$settings) {
     $base_themes = array_keys($themes[$theme]->base_themes);
     foreach ($base_themes as $base_theme) {
       foreach ($themes[$base_theme]->stylesheets['all'] as $css_file) {
-        $settings['contentsCss'][] = url($css_file);
+        $settings['contentsCss'][] = file_create_url($css_file);
       }
     }
     foreach ($themes[$theme]->stylesheets['all'] as $css_file) {
-      $settings['contentsCss'][] = url($css_file);
+      $settings['contentsCss'][] = file_create_url($css_file);
     }
   }
 }
