@@ -62,7 +62,7 @@ function stanford_wysiwyg_wysiwyg_default_profiles() {
       'apply_source_formatting' => 1,
       'paste_auto_cleanup_on_paste' => 1,
       'block_formats' => 'p,h2,h3,h4,h5,h6,pre',
-      'css_setting' => 'self',
+      'css_setting' => 'easy',
       'css_path' => '',
       'css_classes' => 'Abbreviation for All-Caps=abbr.initialism
 Button Link=a.button
