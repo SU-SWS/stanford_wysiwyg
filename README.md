@@ -1,5 +1,5 @@
 #[Stanford WYSIWYG](https://github.com/SU-SWS/stanford_wysiwyg)
-##### Version: 7.x-2.3
+##### Version: 7.x-2.4
 
 Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.com/sherakama)
 [Changelog.txt](CHANGELOG.txt)
