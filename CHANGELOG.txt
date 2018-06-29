@@ -1,6 +1,11 @@
 Stanford WYSIWYG x.x-x.x xxxx-xx-xx
 -----------------------------------
 
+Stanford WYSIWYG 7.x-2.5 2018-06-27
+-----------------------------------
+- Added codeclimate.yml
+- Added composer.json
+
 Stanford WYSIWYG 7.x-2.4 2015-06-26
 -----------------------------------
 - Switching to using stanford_easy_wysiwyg_css module for adding CSS files
