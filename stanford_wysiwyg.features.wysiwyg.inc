@@ -10,16 +10,11 @@
 function stanford_wysiwyg_wysiwyg_default_profiles() {
   $profiles = array();
 
-  // Exported profile: content_editor_text_format
+  // Exported profile: content_editor_text_format.
   $profiles['content_editor_text_format'] = array(
     'format' => 'content_editor_text_format',
     'editor' => 'ckeditor',
     'settings' => array(
-      'default' => 1,
-      'user_choose' => 0,
-      'show_toggle' => 1,
-      'theme' => 'advanced',
-      'language' => 'en',
       'buttons' => array(
         'default' => array(
           'Bold' => 1,
@@ -51,20 +46,16 @@ function stanford_wysiwyg_wysiwyg_default_profiles() {
           'break' => 1,
         ),
       ),
-      'toolbar_loc' => 'top',
-      'toolbar_align' => 'left',
-      'path_loc' => 'bottom',
-      'resizing' => 1,
-      'verify_html' => 1,
-      'preformatted' => 0,
-      'convert_fonts_to_spans' => 1,
-      'remove_linebreaks' => 1,
-      'apply_source_formatting' => 1,
-      'paste_auto_cleanup_on_paste' => 1,
-      'block_formats' => 'p,h2,h3,h4,h5,h6,pre',
+      'theme' => 'advanced',
+      'language' => 'en',
+      'toolbarLocation' => 'top',
+      'resize_enabled' => 1,
+      'default_toolbar_grouping' => 0,
+      'simple_source_formatting' => 0,
       'css_setting' => 'easy',
+      'css_theme' => 'seven',
       'css_path' => '',
-      'css_classes' => 'Abbreviation for All-Caps=abbr.initialism
+      'stylesSet' => 'Abbreviation for All-Caps=abbr.initialism
 Button Link=a.button
 Edit Link=a.edit-link
 More Link=a.more-link
@@ -103,8 +94,21 @@ Error Alert=div.alert-error
 Success Alert=div.alert-success
 Informational Alert=div.alert-info
 Well=div.well',
+      'block_formats' => 'p,h2,h3,h4,h5,h6,pre',
+      'forcePasteAsPlainText' => 0,
+      'pasteFromWordNumberedHeadingToList' => 0,
+      'pasteFromWordPromptCleanup' => 0,
+      'pasteFromWordRemoveFontStyles' => 1,
+      'pasteFromWordRemoveStyles' => 1,
     ),
-    'metatags' => array(),
+    'preferences' => array(
+      'default' => 1,
+      'user_choose' => 0,
+      'show_toggle' => 1,
+      'add_to_summaries' => 0,
+      'version' => '3.6.6.1.7696',
+    ),
+    'name' => 'formatcontent_editor_text_format',
     'rdf_mapping' => array(),
   );
 
