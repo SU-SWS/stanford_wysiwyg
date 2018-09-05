@@ -1,6 +1,12 @@
 Stanford WYSIWYG x.x-x.x xxxx-xx-xx
 -----------------------------------
 
+Stanford WYSIWYG 7.x-2.6 2018-09-05
+-----------------------------------
+- Re-exported Feature to be compatible with wysiwyg >= 7.x-2.5
+- Added wysiwyg dependency to composer.json at version ~2.5
+- Updated .info file depedency constraint to 2.5
+
 Stanford WYSIWYG 7.x-2.5 2018-06-27
 -----------------------------------
 - Added codeclimate.yml
