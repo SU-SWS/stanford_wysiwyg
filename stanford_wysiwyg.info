@@ -4,12 +4,11 @@ core = 7.x
 package = Stanford
 version = 7.x-2.6-dev
 project = stanford_wysiwyg
-project status url = https://github.com/SU-SWS/stanford_wysiwyg
 dependencies[] = better_formats
 dependencies[] = features
 dependencies[] = pathologic
 dependencies[] = stanford_easy_wysiwyg_css
-dependencies[] = wysiwyg (>=2.2)
+dependencies[] = wysiwyg (>=2.5)
 dependencies[] = wysiwyg_filter
 features[features_api][] = api:2
 features[filter][] = content_editor_text_format
@@ -23,3 +22,4 @@ features[user_permission][] = show more format tips link
 features[user_permission][] = use text format content_editor_text_format
 features[user_permission][] = use text format filtered_html
 features[user_permission][] = use text format full_html
+project status url = https://github.com/SU-SWS/stanford_wysiwyg

@@ -236,12 +236,15 @@ div,p,table,ul,ol,blockquote,pre,span,abbr,i,br,cite,code,em,h2,h3,h4,h5,h6,hr,l
             166 => 'clear-both',
             168 => 'clearfix',
           ),
+          'rule_bypass_valid_classes' => 0,
           'rule_valid_ids' => array(
             0 => 'prefix-*',
           ),
+          'rule_bypass_valid_ids' => 0,
           'rule_style_urls' => array(
             0 => '/*',
           ),
+          'rule_bypass_style_urls' => 0,
         ),
       ),
       'pathologic' => array(
